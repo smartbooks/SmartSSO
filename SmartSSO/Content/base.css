@@ -1,0 +1,52 @@
+﻿/*
+  * 基础页面样式
+  * author mr.wangya@qq.com
+  */
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-image: url(/Content/img/page-bg-black.png);
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    margin-top: 15px;
+    padding: 15px;
+}
+
+.container {
+    background-color: #ffffff;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}

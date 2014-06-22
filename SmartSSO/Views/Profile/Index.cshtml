@@ -1,0 +1,45 @@
+﻿@using SmartSSO.Filters
+@{
+    ViewBag.Title = "个人中心";
+}
+
+
+<div class="row">
+
+    <div class="col-md-3">
+
+        @Html.Partial("Shared/_QuickMenu")
+
+    </div>
+    <div class="col-md-9 ">
+        
+        <ol class="breadcrumb">
+            <li><a href="/">管理后台</a></li>
+            <li><a href="/Profile">个人中心</a></li>
+            <li class="active">个人资料</li>
+        </ol>
+
+        <div class="container" style="width: 600px;">
+
+            <form class="form-horizontal" role="form">
+
+                <div class="form-group">
+                    <label class="col-md-2 control-label">当前账号</label>
+                    <div class="col-md-10">
+                        <p class="form-control-static">
+                            @Request.Cookies[UserAuthorizationAttribute.CookieUserName].Value
+                        </p>
+                    </div>
+                </div>
+
+            </form>
+            
+        </div>
+
+        <div class="alert alert-warning">
+            获取最佳体验效果，请升级您的<b><a href="https://www.google.com/intl/zh-CN/chrome/browser/" target="_blank">Google Chrome 简体中文</a></b>浏览器至最新版本。
+        </div>
+
+    </div>
+
+</div>
